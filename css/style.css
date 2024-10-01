@@ -1,11 +1,11 @@
 .header-main {
     width: 100%;
     height: 80px;
-    background-color: black;
     opacity: 0%;
     transition: ease-in-out 250ms;
 }
 
 .header-main:hover {
     opacity: 100%;
+    background-color: black;
 }
