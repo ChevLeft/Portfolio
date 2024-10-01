@@ -22,6 +22,7 @@
     background-position: center;
     
     filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
    
 
 }
