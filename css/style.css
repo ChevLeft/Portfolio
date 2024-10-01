@@ -16,5 +16,5 @@
     height: 1800px;
     background-image: url(../assets/hero.png);
     background-repeat: none;
-    background-size: cover;
+    background-size: fill;
 }
