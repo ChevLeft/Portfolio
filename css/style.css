@@ -15,12 +15,12 @@
 
 .hero-main {
     width: 100%;
-    height: 600px;
+    height: 800px;
     background-image: url("https://cdn.discordapp.com/attachments/1027029690327765054/1290722577618178058/file-c6VPfCgosobq8IaG6AjJdFtY.png?ex=66fd7e92&is=66fc2d12&hm=4a64d0570bed8ce1d51a5837e375f28562183c0ffdc6c58d9bb4bbd47cb40470&");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(30px);
+    filter: blur(10%);
     filter: grayscale(50%);
    
 
