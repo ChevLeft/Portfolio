@@ -21,8 +21,8 @@
     background-size: cover;
     background-position: center;
     
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
    
 
 }
