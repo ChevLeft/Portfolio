@@ -2,10 +2,19 @@
     width: 100%;
     height: 80px;
     opacity: 0%;
+    position: fixed;
     transition: ease-in-out 250ms;
 }
 
 .header-main:hover {
     opacity: 100%;
     background-color: black;
+}
+
+.hero-main {
+    width: 100%;
+    height: 1800px;
+    background-image: url(/assets/hero.png);
+    background-repeat: none;
+    background-size: cover;
 }
