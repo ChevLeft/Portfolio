@@ -20,8 +20,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(50px);
-    filter: grayscale(50%);
+    
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
    
 
 }
