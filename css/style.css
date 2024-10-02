@@ -25,11 +25,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    
     filter: grayscale(50%);
     -webkit-filter: grayscale(50%);
-   
-
+    text-align: center;
 }
 
 .hero-text {
