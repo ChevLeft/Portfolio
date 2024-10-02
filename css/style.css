@@ -27,7 +27,7 @@
     background-position: top;
     filter: grayscale(50%);
     -webkit-filter: grayscale(50%);
-    text-align: center;
+    
 }
 
 .hero-text {
@@ -36,6 +36,7 @@
     font-size: 95px;
     color: aliceblue;
     padding-left: 50px;
+    vertical-align: center;
 }
 
 .subhero-main {
