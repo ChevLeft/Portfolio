@@ -37,7 +37,8 @@
     font-size: 95px;
     color: aliceblue;
     padding-left: 50px;
-    line-height: 780px;
+    line-height: 700px;
+    position: bottom;
 }
 
 .subhero-main {
