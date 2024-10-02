@@ -11,6 +11,10 @@
     background-color: black;
     position: fixed;
     transition: ease-in-out 250ms;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .header-main:hover {
