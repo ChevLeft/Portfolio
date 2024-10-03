@@ -1,5 +1,6 @@
 .body {
     background-color: black;
+    color: aliceblue;
 }
 
 
@@ -14,8 +15,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    color: white;
 }
 
 .header-main:hover {
@@ -24,7 +23,7 @@
 }
 
 .header-nav {
-    
+    margin-left: 50%;
 }
 
 header nav ul {
@@ -33,8 +32,11 @@ header nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-right: 20px;
 }
+
+
+
 
 .hero-main {
     width: 100%;
