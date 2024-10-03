@@ -44,7 +44,7 @@ nav ul li a:hover {
 
 .hero {
     height: 100vh;
-    background-image: url(/assets/hero-section-image.webp); /* Add your own hero image */
+    background-image: url(../assets/hero-section-image.webp); /* Add your own hero image */
     background-size: cover;
     background-position: center;
     position: relative;
