@@ -12,9 +12,10 @@
     position: fixed;
     transition: ease-in-out 250ms;
     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
 }
 
 .header-main:hover {
@@ -22,9 +23,17 @@
     background-color: black;
 }
 
+.header-nav {
+    
+}
+
 header nav ul {
     list-style: none;
     display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
 }
 
 .hero-main {
@@ -37,7 +46,6 @@ header nav ul {
     filter: grayscale(50%);
     -webkit-filter: grayscale(80%);
 
-    
 }
 
 .hero-text {
