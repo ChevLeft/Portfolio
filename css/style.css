@@ -65,9 +65,8 @@ nav ul li {
     font-weight: bolder;
     font-size: 95px;
     color: aliceblue;
-    padding-left: 50px;
-    padding-top: 550px;
-    position: bottom;
+    padding-left: clamp(15px, 5%, 50px);
+    padding-top: 450px;
 }
 
 .subhero-main {
