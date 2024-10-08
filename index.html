@@ -88,4 +88,17 @@ return true;
 });
 </script>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+
+$(document).keydown(function (event) {
+    if (event.keyCode == 123) { // Prevent F12
+        alert('Content is protected\nYou cannot view the Dev Tools.');
+		return false;
+    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+        alert('Content is protected\nYou cannot view the Dev Tools.');
+		return false;
+    }
+});
+</script>
 </html>
