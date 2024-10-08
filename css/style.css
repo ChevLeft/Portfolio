@@ -3,7 +3,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1a1a1a;
     color: #fff;
-    pointer-events: none;
 }
 
 header {
@@ -15,27 +14,23 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    pointer-events: none;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
     padding-left: 20px;
-    pointer-events: none;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    pointer-events: none;
 }
 
 nav ul li {
     margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 20px;
-    pointer-events: none;
 }
 
 nav ul li a {
@@ -43,12 +38,10 @@ nav ul li a {
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
-    pointer-events: none;
 }
 
 nav ul li a:hover {
     color: #0bc5ea;
-    pointer-events: none;
 }
 
 .hero {
