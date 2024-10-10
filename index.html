@@ -1,110 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Chev's Portfolio</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <header></header>
-        <div class="logo">Cheveyo Bramble</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home" class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>Hello, I'm Cheveyo!</h1>
-            <p>Web Developer & Designer</p>
-            <button onclick="scrollToSection('#about')">View More</button>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a web developer with a passion for creating sleek, user-friendly designs. My goal is to build responsive and accessible websites that provide an engaging user experience.</p>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>A web application designed to help users manage tasks efficiently.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>An e-commerce platform that offers a seamless shopping experience.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>cheveyobramble0@gmail.com</p>
-        
-    </section>
-
-    <footer>
-        <p>© 2024 Cheveyo Bramble. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    
 </body>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-document.onkeydown = function(e) {
-        if (e.ctrlKey && 
-            (e.keyCode === 67 || 
-             e.keyCode === 86 || 
-             e.keyCode === 85 || 
-             e.keyCode === 117)) {
-            return false;
-        } else {
-            return true;
-        }
-};
-$(document).keypress("u",function(e) {
-  if(e.ctrlKey)
-  {
-return false;
-}
-else
-{
-return true;
-}
-});
-</script>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-
-$(document).keydown(function (event) {
-    if (event.keyCode == 123) { // Prevent F12
-        alert('Content is protected\nYou cannot view the Dev Tools.');
-		return false;
-    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
-        alert('Content is protected\nYou cannot view the Dev Tools.');
-		return false;
-    }
-});
-</script>
-<script>
-    document.addEventListener("contextmenu", function(event) {
-        event.preventDefault();
-    });
-</script>
-
 </html>
