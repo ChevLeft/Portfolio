@@ -23,9 +23,16 @@
         }
         .center-text .wave {
             display: inline-block;
-            animation: wave 1.5s infinite ease-in-out;
-            /* Remove space between letters of "Cheveyo" */
+            /* Initially no wave effect */
             margin-right: -0.05em;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+        .center-text .wave:hover {
+            color: red;
+        }
+        .center-text.active .wave {
+            animation: wave 1.5s infinite ease-in-out;
         }
 
         /* Apply a slight delay for each character in "Cheveyo" */
@@ -55,18 +62,23 @@
             }
         }
     </style>
+    <script>
+        function toggleWave() {
+            document.querySelector('.center-text').classList.toggle('active');
+        }
+    </script>
 </head>
 <body>
     <div class="center-text">
         Hi, I'm&nbsp;
-        <!-- Only wrap "Cheveyo" in <span> elements for the wave effect with no space between characters -->
-        <span class="wave">C</span>
-        <span class="wave">h</span>
-        <span class="wave">e</span>
-        <span class="wave">v</span>
-        <span class="wave">e</span>
-        <span class="wave">y</span>
-        <span class="wave">o</span>
+        <!-- "Cheveyo" will wave only on click and change color on hover -->
+        <span class="wave" onclick="toggleWave()">C</span>
+        <span class="wave" onclick="toggleWave()">h</span>
+        <span class="wave" onclick="toggleWave()">e</span>
+        <span class="wave" onclick="toggleWave()">v</span>
+        <span class="wave" onclick="toggleWave()">e</span>
+        <span class="wave" onclick="toggleWave()">y</span>
+        <span class="wave" onclick="toggleWave()">o</span>
         ... This website is under construction.
     </div>
 </body>
