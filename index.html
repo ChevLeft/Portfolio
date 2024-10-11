@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under Construction</title>
     <style>
+        /* Base body styling for mobile responsiveness */
         body {
             margin: 0;
             height: 100vh;
@@ -14,28 +15,36 @@
             background-color: #121212;
             color: #ffffff;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
+
+        /* Adjust font size to fit various screen sizes */
         .center-text {
             display: inline-block;
-            text-align: center;
-            font-size: 2em;
+            font-size: 6vw; /* Responsive font size based on viewport width */
             animation: fadeInOut 2s infinite;
         }
+
+        /* "Cheveyo" letters without wave initially */
         .center-text .wave {
             display: inline-block;
-            /* Initially no wave effect */
             margin-right: -0.05em;
             color: inherit;
             transition: color 0.3s ease;
+            cursor: pointer; /* Add pointer to indicate interactivity */
         }
+
+        /* Color transition on hover */
         .center-text .wave:hover {
             color: red;
         }
+
+        /* Add the wave animation only when the text is clicked */
         .center-text.active .wave {
             animation: wave 1.5s infinite ease-in-out;
         }
 
-        /* Apply a slight delay for each character in "Cheveyo" */
+        /* Responsive animation delay for each character in "Cheveyo" */
         .center-text .wave:nth-child(1) { animation-delay: 0.1s; }
         .center-text .wave:nth-child(2) { animation-delay: 0.2s; }
         .center-text .wave:nth-child(3) { animation-delay: 0.3s; }
@@ -44,6 +53,7 @@
         .center-text .wave:nth-child(6) { animation-delay: 0.6s; }
         .center-text .wave:nth-child(7) { animation-delay: 0.7s; }
 
+        /* Fade in and out effect */
         @keyframes fadeInOut {
             0%, 100% {
                 opacity: 1;
@@ -53,6 +63,7 @@
             }
         }
         
+        /* Wave animation for "Cheveyo" */
         @keyframes wave {
             0%, 100% {
                 transform: translateY(0);
@@ -61,8 +72,16 @@
                 transform: translateY(-10px);
             }
         }
+        
+        /* Ensure responsive spacing */
+        @media (max-width: 600px) {
+            .center-text {
+                font-size: 8vw; /* Increase font size slightly for smaller screens */
+            }
+        }
     </style>
     <script>
+        // Toggle wave effect on click
         function toggleWave() {
             document.querySelector('.center-text').classList.toggle('active');
         }
@@ -79,7 +98,7 @@
         <span class="wave" onclick="toggleWave()">e</span>
         <span class="wave" onclick="toggleWave()">y</span>
         <span class="wave" onclick="toggleWave()">o</span>
-        ... This website is under construction.
+        <br>This website is under construction.
     </div>
 </body>
 </html>
