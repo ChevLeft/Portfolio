@@ -24,6 +24,8 @@
         .center-text .wave {
             display: inline-block;
             animation: wave 1.5s infinite ease-in-out;
+            /* Remove space between letters of "Cheveyo" */
+            margin-right: -0.05em;
         }
 
         /* Apply a slight delay for each character in "Cheveyo" */
@@ -57,7 +59,7 @@
 <body>
     <div class="center-text">
         Hi, I'm&nbsp;
-        <!-- Only wrap "Cheveyo" in <span> elements for the wave effect -->
+        <!-- Only wrap "Cheveyo" in <span> elements for the wave effect with no space between characters -->
         <span class="wave">C</span>
         <span class="wave">h</span>
         <span class="wave">e</span>
